@@ -7,8 +7,8 @@ defmodule Aoc2022Day01 do
     |> Enum.max()
   end
 
-  defp sum_calories(s) do
-    s
+  defp sum_calories(calories) do
+    calories
     |> String.split("\n", trim: true)
     |> Enum.map(&String.to_integer/1)
     |> Enum.sum()
